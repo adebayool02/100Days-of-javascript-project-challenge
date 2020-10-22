@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<button type="display" id="button">generate color</button>
+<script>
+let btn = document.querySelector('#button');
+btn.addEventListener('click',()=>{
+let red = Math.floor(Math.random()*255)+0;
+let green = Math.floor(Math.random()*255)+0;
+let blue = Math.floor(Math.random()*255)+0;
+document.body.style.background = `rgb(${red},${green},${blue})`;
+})
+</script>
+</body>
+</html>
+
+<style>
+#button{
+text-align:center;
+margin-top : 20%;
+margin-left:43%;
+background-color:brown;
+border:0px;
+padding:17px;
+border-radius:10px;
+font-size:20px;
+width:20%;
+}
+</style>
